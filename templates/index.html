@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../static/index.css">
+    <title>LED ON / OFF</title>
+    <link href="/static/index.css" rel="stylesheet">
 </head>
 <body>
-    <h1>전구 온 오프</h1>
-    <img src="../static/images.jpeg" id="pic">
-    <br>
-    <button onclick="on()" id="on1">켜짐</button>
-    <button onclick="off()" id="off1">꺼짐</button>
-    <script src="../static/index.js"></script>
+    <div class="container text-center">
+        <h2>LED ON / OFF</h2>
+        <div>
+            <!-- 초기 이미지는 offf.jpeg -->
+            <img id="led" src="/static/offf.jpeg" width="100" alt="led">
+        </div>
+        <button id="on">켜기</button>
+        <button id="off">끄기</button>
+    </div>
+
+    <!-- 1. jQuery 라이브러리를 먼저 로드 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- 2. 그 다음 index.js 로드 -->
+    <script src="/static/index.js"></script>
 </body>
 </html>
