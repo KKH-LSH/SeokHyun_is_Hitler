@@ -1,0 +1,15 @@
+button{
+    width: 100px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+#on1{
+    background-color:rgb(0, 174, 255);
+    color: white;
+}
+#off1{
+   background-color:rgb(222, 12, 12);
+   color: white;
+}
